@@ -4,7 +4,7 @@
 
 This project demonstrates a simple end-to-end (E2E) test automation setup using Cypress.
 
-The target application is [Sauce Demo](https://www.saucedemo.com) a public demo e-commerce site commonly used for automation practice.
+The target application is [Sauce Demo](https://www.saucedemo.com), a public demo e-commerce site commonly used for automation practice.
 
 The purpose of this project is to demonstrate understanding of:
 * Writing basic E2E test flows
@@ -14,8 +14,11 @@ The purpose of this project is to demonstrate understanding of:
 * Organizing tests in a maintainable structure
 * Run tests locally and in GitHub Actions (CI)
 
+This is intentionally a small, learning-oriented project, rather than a full production automation framework.
 
-Project Structure:
+
+
+### Project Structure:
 ```
 cypress/
   e2e/
@@ -28,6 +31,8 @@ cypress.config.js
 package.json
 .github/workflows/cypress.yml
 ```
+
+
 
 ### Test Suites
 * login.cy.js
@@ -45,7 +50,8 @@ package.json
     - Cart badge updates correctly
 
 
-## Environment Variable Handling
+
+### Environment Variable Handling
 Credentials are loaded using Cypress’s environment variable system:
 ```
 cy.env(['VALID_USERNAME', 'PASSWORD'])
@@ -67,7 +73,8 @@ Secrets can be injected using:
 * `CYPRESS_PASSWORD`
 
 
-## Continuous Integration (GitHub Actions)
+
+### Continuous Integration (GitHub Actions)
 Tests run automatically on:
 * Push
 * Pull Request
